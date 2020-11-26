@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+    <title>React App</title>
+
+  </head>
+  
+  <body>
+    <div id='map'></div>
+    <div id="root"></div>
+    <div class="main">
+      <div class="boxinfo">
+        <div class="detail">
+          <h4>Name: </h4>
+          <span id="name"></span>
+        </div>
+
+        <div class="detail">
+          <h4>Id: </h4>
+          <span id="meteId"></span>
+        </div>
+
+        <div class="detail">
+          <h4>Recclass: </h4>
+          <span id="recclass"></span>
+        </div>
+
+        <div class="detail">
+          <h4>Fall: </h4>
+        <span id="Fall"></span>
+        </div>
+
+        <div class="detail">
+          <h4>Geolocation: </h4>
+          <span id="Geolocation"></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="appmap.js"></script>
+  </body>
+</html>

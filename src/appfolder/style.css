@@ -1,0 +1,23 @@
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flex-full {
+  width: 100%;
+  flex: 1;
+}
+
+.chartCont {
+	width: 100%;
+	display: flex; 
+	box-sizing: border-box;
+	justify-content: space-between;
+	padding: 50px;
+}
+
+.lineChart {
+	width: 650px;
+	height: auto;
+}
