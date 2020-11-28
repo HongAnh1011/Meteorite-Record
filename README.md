@@ -10,18 +10,18 @@ This app was created for the MyWallSt - Web Developer Assignment
 
 ## What's inside
 
-*Clicking on the map launches MapBox to display the meteor geolocation
-*The chart is filtered by year on the current data
-*A table displays all meterorite details(name, nametype, ...) that was sorted by size/ year/ name and filtered from the year 1900
-*A search bar by name and year
+* Clicking on the map launches MapBox to display the meteor geolocation
+* The chart is filtered by year on the current data
+* A table displays all meterorite details(name, nametype, ...) that was sorted by size/ year/ name and filtered from the year 1900
+* A search bar by name and year
 
 
 ## Installation
 
 1. Project is created with 
-	*ReactJs v17.0.1
-	*mapbox v1.12.0
-	*chart Js
+	* ReactJs v17.0.1
+	* Mapbox v1.12.0
+	* Chart Js
 
 2. Fonts from [Google Fonts](https://fonts.google.com/specimen/Raleway?sidebar.open=true&selection.family=Raleway:wght@400;500#standard-styles "Google Fonts")
 
