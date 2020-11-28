@@ -1,6 +1,6 @@
-import "https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"
+import "https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js";
 
-const mapbox_token = "pk.eyJ1IjoiaG9uZ2FuaDEyMyIsImEiOiJja2hxY2NsbTAwajd0MnVtZ21xeXV2d3N1In0.5IngRRfPJPmRcMftpWTu7w"
+const mapbox_token = "pk.eyJ1IjoiaG9uZ2FuaDEyMyIsImEiOiJja2hxY2NsbTAwajd0MnVtZ21xeXV2d3N1In0.5IngRRfPJPmRcMftpWTu7w";
 
 mapboxgl.accessToken = mapbox_token;
 
@@ -14,15 +14,15 @@ var map = new mapboxgl.Map({
 var nameDisplay = document.getElementById('name');
 var meteIdDisplay = document.getElementById('meteId');
 var recclassDisplay = document.getElementById('recclass');
-var fallDisplay = document.getElementById('Fall');
+var yearDisplay = document.getElementById('year');
 var geolocationDisplay = document.getElementById('Geolocation');
 
 fetch("/meteorite.json")
 .then(response => response.json())
 .then(data => {
-	const { reports } = data;
+	const  filtered  = data?.reports?.filter(e => Number(e.year > 1900));
 
-	reports.forEach(report => {
+	filtered.forEach(report => {
 		var markerHeight = 20, markerRadius = 10, linearOffset = 15;
 		var popupOffsets = {
 			'top': [0, 0],
@@ -54,7 +54,7 @@ fetch("/meteorite.json")
 			nameDisplay.textContent = report.name;
 			meteIdDisplay.textContent = report.meteId;
 			recclassDisplay.textContent = report.recclass;
-			fallDisplay.textContent = report.fall;
+			yearDisplay.textContent = report.year;
 			geolocationDisplay.textContent = report.geolocation.coordinates;
 		});
 
@@ -62,6 +62,6 @@ fetch("/meteorite.json")
 		element.addEventListener('mouseleave', () => popup.remove());
 
 		marker.setPopup(popup);
-		
+		map.scrollZoom.disable();
 	});
 });

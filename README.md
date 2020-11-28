@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Meteorite Record
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple app that displays a list of fallen meteors on Earth from 1900 to present.
 
-## Available Scripts
+This app was created for the MyWallSt - Web Developer Assignment
 
-In the project directory, you can run:
+## Screenshots
+![](recording.gif)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What's inside
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+*Clicking on the map launches MapBox to display the meteor geolocation
+*The chart is filtered by year on the current data
+*A table displays all meterorite details(name, nametype, ...) that was sorted by size/ year/ name and filtered from the year 1900
+*A search bar by name and year
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Project is created with 
+	*ReactJs v17.0.1
+	*mapbox v1.12.0
+	*chart Js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Fonts from [Google Fonts](https://fonts.google.com/specimen/Raleway?sidebar.open=true&selection.family=Raleway:wght@400;500#standard-styles "Google Fonts")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Icons from [Heroicons](https://heroicons.dev/ "Heroicons")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## API Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+It pull data from [NASA's Open Data Portal - Meteorite Landings API](https://data.nasa.gov/view/ak9y-cwf9 "Meteorite Landings API")
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

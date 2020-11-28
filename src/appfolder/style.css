@@ -18,6 +18,13 @@
 }
 
 .lineChart {
-	width: 650px;
+	width: 49%;
 	height: auto;
+}
+
+.lineChart:last-child {padding-right: 0;}
+
+@media only screen and (max-width: 760px) {
+	.chartCont {flex-wrap: wrap;}
+	.lineChart {width: 100%;}
 }
