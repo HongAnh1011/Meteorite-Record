@@ -17,7 +17,7 @@ This app was created for the MyWallSt - Web Developer Assignment
 
 
 ## How to start
-1. Clone
+### 1. Clone
 
 ```
 # Clone
@@ -27,7 +27,7 @@ https://github.com/HongAnh1011/Meteorite-Record
 cd meteorite-record
 ```
 
-2. Install and open the file
+### 2. Install and open the file
 ```
 npm install
 ```
