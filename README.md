@@ -16,6 +16,29 @@ This app was created for the MyWallSt - Web Developer Assignment
 * A search bar by name and year
 
 
+## How to start
+1. Clone
+
+```
+# Clone
+https://github.com/HongAnh1011/Meteorite-Record
+
+# Navigate to clonned folder
+cd meteorite-record
+```
+
+2. Install and open the file
+```
+npm install
+```
+
+Run this command to start
+
+```
+npm start
+```
+
+
 ## Installation
 
 1. Project is created with 
@@ -31,5 +54,6 @@ This app was created for the MyWallSt - Web Developer Assignment
 ## API Reference
 
 It pull data from [NASA's Open Data Portal - Meteorite Landings API](https://data.nasa.gov/view/ak9y-cwf9 "Meteorite Landings API")
+
 
 
